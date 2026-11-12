@@ -61,6 +61,7 @@ module uart_top_tb;
         wr_en = 1'b1;
         @(negedge clk);
         wr_en = 1'b0;
+        @(negedge clk);
     end
     endtask
 
